@@ -1,0 +1,22 @@
+{
+  "name": "modulo_externo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "flavianoventuras"
+  },
+  "keywords": [
+    "1a2Bb34d"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.1.2",
+    "minimist": "^1.2.8"
+  }
+}
