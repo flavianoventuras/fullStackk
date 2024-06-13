@@ -1,14 +1,12 @@
-// Primeiro servidor HTML 
+//Core Module URL
 
-const  http = require('http');
-const port = 3000;
+const url = require('url');
 
-const server = http.createServer((req, res) =>{
-    res.statusCode = 200;
-    res.setHeader('Content-type', 'text/html');
-    res.end('<h1> Este e o primeiro server com HTML <h1>');
-})
+const address = "http://www.meusite.com.br/catalog?produtos=cadeira"
 
-server.listen(port,()=>{
-    console.log("Servidor rodando", port)
-})
+const parseURL = new url.URL(address);
+]console.log(parseURL.host);
+]console.log(parseURL.pathname);
+]console.log(parseURL.search);
+]console.log(parseURL.searchParams);
+]console.log(parseURL.searchParams.get('produtos'));
