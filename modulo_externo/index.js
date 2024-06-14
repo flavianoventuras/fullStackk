@@ -1,5 +1,12 @@
 const fs = require('fs');
 
-fs.unlink("arquivo.txt", (err) =>{
-    console.log(err);
+fs.rename("arquivo2.txt", "novoArquivo.txt", (err)=>{
+
+    if(err){
+        console.log(err);
+        return;
+    }
+
+    console.log("Arquivo renomeado")
+
 })
