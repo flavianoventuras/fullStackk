@@ -1,12 +1,7 @@
-const fs = require('fs');
+const path = require('path');
 
-fs.rename("arquivo2.txt", "novoArquivo.txt", (err)=>{
+const CaminhoCriadorDePasta = "/relatorio/tiagorelatorios/relatorio1.pdf"
 
-    if(err){
-        console.log(err);
-        return;
-    }
-
-    console.log("Arquivo renomeado")
-
-})
+console.log(path.dirname(CaminhoCriadorDePasta));
+console.log(path.basename(CaminhoCriadorDePasta));
+console.log(path.extname(CaminhoCriadorDePasta));
