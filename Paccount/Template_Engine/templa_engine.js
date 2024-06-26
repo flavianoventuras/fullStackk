@@ -6,7 +6,20 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 app.get('/', (req, res)=>{
-    res.render('home', {layout: false})
+    const user = {
+        name: 'Tiago',
+        surname: 'Barreto',
+        age: 37
+    }
+
+    const palavra = "texto"
+    const auth = true
+    res.render('home', {user: user, palavra, auth})
+})
+
+app.get('/dashboard', (req, res)=>{
+    const items = ['item a', 'item b', 'item c']
+    res.render('dashboard', {items})
 })
 
 app.listen(3000, ()=>{

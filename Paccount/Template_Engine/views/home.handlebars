@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     <h1>Olá handlebars</h1>
-</body>
-</html>
+    <p>Algum texto do site!!!</p>
+    <p>O nome do usuário é {{user.name}} e tem {{user.age}} anos de idade</p>
+
+    <h2>{{palavra}}</h2>
+
+    {{#if auth}}
+        <p>Você está autenticado! <a href="./dashboard">Clique aqui</a></p>
+    {{/if}}
